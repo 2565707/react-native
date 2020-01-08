@@ -14,9 +14,9 @@ class HomeScreen extends React.Component {
             //     onPress={() => navigate('Profile', { name: 'Jane' })}
             // />
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>
-                HOME
-            </Text>
+                <Text>
+                    HOME
+                </Text>
             </View>
         );
     }

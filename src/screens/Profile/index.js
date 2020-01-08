@@ -1,25 +1,29 @@
 import React from 'react';
 
-import { Button } from '@ant-design/react-native';
 import { Text, View } from 'react-native';
 
-class ProfileScreen extends React.Component {
-    static navigationOptions = {
-        title: 'Welcome',
-    };
-    render() {
-        const { navigate } = this.props.navigation;
-        return (
-            // <Button
-            //     title="CAO"
-            //     onPress={() => navigate('Profile', { name: 'Jane' })}
-            // />
-            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>
-                PRFIOLE
-            </Text>
-            </View>
+import { Button, Icon } from '@ant-design/react-native';
 
+class ProfileScreen extends React.Component {
+    static navigationOptions = ({ navigate, navigation }) => ({
+        headerTitle: 'Profile',
+        headerRight: () => (
+            <Icon
+                name="setting"
+                color="black"
+                size="lg"
+                onPress={() => navigation.navigate(`Settings`)}
+            />
+        ),
+        // headerRightContainerStyle: {
+        //     paddingRight: 40
+        // }
+    });
+    render() {
+        return (
+            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+                <Text type="primary">Profile</Text>
+            </View>
         );
     }
 }
