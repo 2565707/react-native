@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { Button } from '@ant-design/react-native';
-import { AsyncStorage, View } from 'react-native';
+import { AsyncStorage, View, Button } from 'react-native';
 
 class SettingsScreen extends React.Component {
     static navigationOptions = {
@@ -11,7 +10,7 @@ class SettingsScreen extends React.Component {
     render() {
         return (
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <Button type="warning" onPress={this._signOutAsync}>Sign Out</Button>
+                <Button title="Sign Out" color="#f194ff" onPress={this._signOutAsync} />
             </View>
 
         );

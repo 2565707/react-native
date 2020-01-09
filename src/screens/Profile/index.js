@@ -1,17 +1,13 @@
 import React from 'react';
 
-import { Text, View } from 'react-native';
-
-import { Button, Icon } from '@ant-design/react-native';
+import { Text, View, Button } from 'react-native';
 
 class ProfileScreen extends React.Component {
     static navigationOptions = ({ navigate, navigation }) => ({
         headerTitle: 'Profile',
         headerRight: () => (
-            <Icon
-                name="setting"
-                color="black"
-                size="lg"
+            <Button
+                title="setting"
                 onPress={() => navigation.navigate(`Settings`)}
             />
         ),
