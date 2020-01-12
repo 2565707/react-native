@@ -16,7 +16,7 @@ import {
     Title
 } from 'native-base';
 
-class SimpleScreen extends React.Component {
+class CalendarScreen extends React.Component {
     render() {
         return (
             <Container>
@@ -30,21 +30,23 @@ class SimpleScreen extends React.Component {
                         </Button>
                     </Left>
                     <Body>
-                        <Title>Simple</Title>
+                        <Title>Calendar</Title>
                     </Body>
                     <Right />
                 </Header>
                 <Content>
                     <Card >
                         <CardItem>
-                            <Text>Simple</Text>
+                            <Text>Calendar</Text>
                         </CardItem>
 
                     </Card>
                 </Content>
             </Container>
+
         );
     }
 }
 
-export default SimpleScreen;
+
+export default CalendarScreen;

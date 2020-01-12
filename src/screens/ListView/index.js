@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { StyleSheet } from 'react-native';
 import {
     Container,
     Header,
@@ -15,11 +16,10 @@ import {
     Icon,
     Title
 } from 'native-base';
-
 class SimpleScreen extends React.Component {
     render() {
         return (
-            <Container>
+            <Container >
                 <Header>
                     <Left>
                         <Button
@@ -30,21 +30,29 @@ class SimpleScreen extends React.Component {
                         </Button>
                     </Left>
                     <Body>
-                        <Title>Simple</Title>
+                        <Title>
+                            ListView
+                        </Title>
                     </Body>
                     <Right />
                 </Header>
                 <Content>
-                    <Card >
-                        <CardItem>
-                            <Text>Simple</Text>
-                        </CardItem>
-
-                    </Card>
+                    <Text>
+                        ListView
+                </Text>
                 </Content>
             </Container>
+
         );
     }
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+});
 
 export default SimpleScreen;

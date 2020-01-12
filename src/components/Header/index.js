@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Text, View, StyleSheet } from 'react-native';
 
-class ToolBar extends React.Component {
+class Simple extends React.Component {
     render() {
         return (
             <View style={styles.container}>
@@ -23,4 +23,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default ToolBar;
+export default Simple;

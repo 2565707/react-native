@@ -16,7 +16,7 @@ import {
     Title
 } from 'native-base';
 
-class SimpleScreen extends React.Component {
+class BookingScreen extends React.Component {
     render() {
         return (
             <Container>
@@ -30,21 +30,23 @@ class SimpleScreen extends React.Component {
                         </Button>
                     </Left>
                     <Body>
-                        <Title>Simple</Title>
+                        <Title>Booking</Title>
                     </Body>
                     <Right />
                 </Header>
                 <Content>
                     <Card >
                         <CardItem>
-                            <Text>Simple</Text>
+                            <Text>Booking</Text>
                         </CardItem>
 
                     </Card>
                 </Content>
             </Container>
+
         );
     }
 }
 
-export default SimpleScreen;
+
+export default BookingScreen;

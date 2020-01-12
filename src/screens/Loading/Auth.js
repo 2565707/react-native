@@ -1,8 +1,9 @@
 import React from 'react';
 
+import AsyncStorage from '@react-native-community/async-storage';
+
 import {
     ActivityIndicator,
-    AsyncStorage,
     StatusBar,
     StyleSheet,
     View,

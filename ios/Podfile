@@ -34,9 +34,12 @@ target 'ReactAntMobile' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  pod 'RNCMaskedView', :path => '../node_modules/@react-native-community/masked-view'
 
-  pod 'react-native-safe-area-context', :path => '../node_modules/react-native-safe-area-context'
+
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
 
   target 'ReactAntMobileTests' do
     inherit! :search_paths
